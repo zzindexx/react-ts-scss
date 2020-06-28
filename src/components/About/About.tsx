@@ -2,7 +2,7 @@ import * as React from 'react';
 import { LeftNav } from '../LeftNav/LeftNav';
 import { Switch, Route } from 'react-router-dom';
 
-export const About = () => {
+export const About: React.SFC = () => {
     return <React.Fragment>
         <div className="container-fluid">
             <div className="row flex-xl-nowrap">

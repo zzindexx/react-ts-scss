@@ -1,8 +1,8 @@
 import * as React from 'react';
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './NavBar.scss';
 
-export const NavBar = () => {
+export const NavBar: React.SFC = () => {
     return <header className="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
         <a className="navbar-brand mr-0 mr-md-2" href="/" aria-label="Bootstrap">
             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" className="d-block" viewBox="0 0 612 612" role="img" focusable="false">

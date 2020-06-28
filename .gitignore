@@ -2,3 +2,4 @@ node_modules
 dist/scripts/*
 dist/styles/*
 .DS_Store
+.eslintcache

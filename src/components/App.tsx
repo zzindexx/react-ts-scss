@@ -4,20 +4,18 @@ import { Main } from "./Main/Main";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { About } from "./About/About";
 
-export class App extends React.PureComponent {
-    render() {
-        return <React.Fragment>
-            <BrowserRouter>
-                <NavBar />
-                <Switch>
-                    <Route path="/about">
-                        <About />
-                    </Route>
-                    <Route path="/">
-                        <Main />
-                    </Route>
-                </Switch>
-            </BrowserRouter>
-        </React.Fragment>;
-    }
+export const App: React.SFC = () => {
+    return <React.Fragment>
+        <BrowserRouter>
+            <NavBar />
+            <Switch>
+                <Route path="/about">
+                    <About />
+                </Route>
+                <Route path="/">
+                    <Main />
+                </Route>
+            </Switch>
+        </BrowserRouter>
+    </React.Fragment>;
 }
